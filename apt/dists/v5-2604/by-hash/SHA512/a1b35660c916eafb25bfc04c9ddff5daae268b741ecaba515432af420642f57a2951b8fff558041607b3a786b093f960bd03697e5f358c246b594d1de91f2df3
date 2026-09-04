@@ -1,0 +1,30 @@
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: v5-2604
+Acquire-By-Hash: yes
+Codename: v5-2604
+Date: Fri, 04 Sep 2026 11:55:45 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Ubuntu 26.04 - Podman 5.x maintenance
+MD5Sum:
+ c9ec53241943eae200b143955061bc3e 721 main/binary-amd64/Packages
+ 07150c4dbdcd887946053a32c2376407 485 main/binary-amd64/Packages.gz
+ 55d0980e75a5a5a037b2206dd51dc0c8 179 main/binary-amd64/Release
+ 053cb4b287b6c4d4da3285798d76034b 721 main/binary-arm64/Packages
+ 295f84bb92ecc83e5d6616afcbcd7353 484 main/binary-arm64/Packages.gz
+ 4034cdcea6b660df9a8df731148dbd6d 179 main/binary-arm64/Release
+SHA1:
+ 0f88e8729f7b8b932d16363bee6adb98917f301a 721 main/binary-amd64/Packages
+ fd40a2305fb7a426d7af12e47287a9075ab07c8d 485 main/binary-amd64/Packages.gz
+ ef9f2903d1d521a3345e9de5e065b2aee2b2fb14 179 main/binary-amd64/Release
+ 437b098441153186398228132c6ea77e0bc99772 721 main/binary-arm64/Packages
+ 3971a30e65e9c9e98b746fe03d765ccb19e0c6a8 484 main/binary-arm64/Packages.gz
+ b828dc2632e36c8a89dc2859242226943ef48dc7 179 main/binary-arm64/Release
+SHA256:
+ 088d30bfed2c7435fd43f087e5249056264909a8eb586e7c87db24034c24a9f2 721 main/binary-amd64/Packages
+ 392811f2c58cc0ec2cb94bf13ddcc6fc4dbed83fd6c898428f8e98d629ab18a8 485 main/binary-amd64/Packages.gz
+ c2232e316100eaa5dfe12f728bcab11b68629e50a5bea237e62bf95d3d7ecf88 179 main/binary-amd64/Release
+ eaf01494efe479a81feaa3a20c9e45d91c405bb1d4d9bcf639f1b603d2d2e853 721 main/binary-arm64/Packages
+ 33460371f05db04c2ca9685eb72c757bcc7b492b183409b0a075a2ad43cc129f 484 main/binary-arm64/Packages.gz
+ bc1dbe05e89edd854052d5aedbd3b1beef69e76189efd8741c379fa06f5770f4 179 main/binary-arm64/Release

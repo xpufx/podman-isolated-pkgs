@@ -1,0 +1,17 @@
+Package: podman5
+Version: 5.8.6~ubuntu24.04.podman2
+Architecture: arm64
+License: Apache-2.0
+Maintainer: Podman Isolated <noreply@github.com>
+Installed-Size: 148890
+Depends: iptables, nftables, uidmap, libcap2, libglib2.0-0t64, libgpgme11t64, libjson-c5, libseccomp2, libsystemd0
+Homepage: https://github.com/xpufx/podman-isolated
+Priority: optional
+Section: admin
+Filename: pool/main/p/podman5/podman5_5.8.6~ubuntu24.04.podman2_arm64.deb
+Size: 69324124
+SHA256: edfe0192cb14f0bfdac64c1c35931ad93cef97a6410bb8abd2983a8477996f65
+SHA1: 30b49bdff2b409f81261b241ea0d0fa634aea489
+MD5sum: 9e7ead70d513c7af88dbbf37ba935744
+Description: Isolated upstream Podman container engine and companion OCI stack in /opt/podman/releases/5.8.6
+

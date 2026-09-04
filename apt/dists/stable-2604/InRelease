@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: stable-2604
+Acquire-By-Hash: yes
+Codename: stable-2604
+Date: Fri, 04 Sep 2026 09:59:51 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Ubuntu 26.04 - stable releases
+MD5Sum:
+ 4237fb16f639c4516a33d7927de4113f 721 main/binary-amd64/Packages
+ 519c1b948aa21afd17fb2328e9507eb8 485 main/binary-amd64/Packages.gz
+ e7b84011d5bb97af1285c24a16b58fef 176 main/binary-amd64/Release
+ 742b4c27cbe02831d7f6c43cfd7cf4a4 721 main/binary-arm64/Packages
+ fd3337301028861d41d72398760750b6 486 main/binary-arm64/Packages.gz
+ 313971ba8091af5dbf29c58bc7bd709d 176 main/binary-arm64/Release
+SHA1:
+ 5fd27cadb025819c15d3c945c87e331eb5c75880 721 main/binary-amd64/Packages
+ c11ad56bec864f33ff43cc1c7abe42956f20b027 485 main/binary-amd64/Packages.gz
+ 1be9e4862d761517ade54025f21d08b6902975b7 176 main/binary-amd64/Release
+ fc6a8e80984ba30d9f70867a4a79021bd1afd403 721 main/binary-arm64/Packages
+ ff1aee785d15a57ea93fba75a1fbcb6407dd34dd 486 main/binary-arm64/Packages.gz
+ 3851b49bdc8b69674f5dad80a24d4314441ba15f 176 main/binary-arm64/Release
+SHA256:
+ 31a70a55e1c8bfceb3c28d4cca1a22ec4beacb808cf16df4de08d42b9c517f61 721 main/binary-amd64/Packages
+ ad09e44169b34aca0f9ee2cf79cf249c8929ea8f723686d330bba278b35e2ff7 485 main/binary-amd64/Packages.gz
+ 018f58540e3bbeae2473ad53efa34efc0cf4022d7025766b6b09bc6f2a8743fe 176 main/binary-amd64/Release
+ e97ee41fa7b29e5c2fccc8acd1f52e3055f26ca404452839060359602060a46b 721 main/binary-arm64/Packages
+ ec937e0e44820930720e0e9bf2fce603021145c889ca585536994dab04da83af 486 main/binary-arm64/Packages.gz
+ fa47e7124a86f786a42a3697d888f68d0e4d337d5c4d37492aa734e9fd05be02 176 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEESwNbxKIkL8leujArHpbCFN75UXQFAmqalpcACgkQHpbCFN75
+UXQO/Q//XWoLKr4nENETwP/URIPxNXJ4GwCy2KbAM0MKIWGtgUFDqQHuSgK7WPsH
+lE466AQ8S5X8zruCpU9zWc2UpLWkvgLQRLO/+Wo6/eehV/fxLp3/C8xUrFBVxCy/
+y5s2Rwj1gp9jd00mFdOce6GUWVLbEp1MXbNrU/NfGdq+2ZiymQP35o4lOlKNI2La
+/hDldgOM90Fof7VaWl8NEGV+wezKteRPRlScaqdr7j9AIQIT5imhNxZapcMsdxMa
+Elub+uky+I8rJfTD41ZCEGWA+81jn/NxGsNhQXAlxsISFvu+MZ5llmFCiJQhbi+R
+yCR3bKFdjnXfTeLVBaEzqzlyNq1uiQk99I2DaZNdsHdOmg0rCocQV6itkIOPYQMj
+/i5WUctA6b6U6d/BkM/HXZyCm2N25pv+T4XbnvXXImW2WKpDc0Sp1enVs+Z8eCUE
+7n+Kf1Yl796eY6wQ5ftK7z7I/m1eXqPiJYgSg8xYW0NAIDxKuOJ+iT9aOZL63vfn
+reY7MZSNE17k3OKbLMP6oyflwXw/8tsW+hikGz0LBtNqtcW9Wqukvius1bcfTOwj
+scquDTU861RXU2QasqOSvK2xz+FTfFFcV4TwJHuV0i4hL9KDV/KyqOtw5HUV4iEJ
+4lcFRm2WtLaCKQKN68rkc4+WlAbLtxhruudeDiqdj5rMwJ5V1X4=
+=QpLE
+-----END PGP SIGNATURE-----

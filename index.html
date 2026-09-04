@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podman for Ubuntu — APT Repository</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.6; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
+code, pre { background: #f4f4f4; border-radius: 4px; }
+code { padding: 0.15em 0.4em; font-size: 0.9em; }
+pre { padding: 1rem; overflow-x: auto; }
+.tracks { display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; }
+.track { flex: 1; min-width: 280px; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+.track h3 { margin-top: 0; }
+.track.recommended { border-color: #2ea44f; }
+.track.recommended h3::after { content: " (recommended)"; font-size: 0.8em; color: #2ea44f; font-weight: normal; }
+.header-row { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+.header-row h1 { border-bottom: none; padding-bottom: 0; margin: 0; }
+.repo-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.75rem; border: 1px solid #d0d7de; border-radius: 6px; background: #f6f8fa; color: #24292f; text-decoration: none; font-size: 0.85em; font-weight: 600; transition: background 0.2s; }
+.repo-badge:hover { background: #eaedf0; color: #0969da; text-decoration: none; }
+.repo-badge svg { fill: currentColor; }
+.tab-group { margin: 1.5rem 0; }
+.tab-buttons { display: flex; gap: 0; }
+.tab-btn { padding: 0.5rem 1.5rem; border: 1px solid #ddd; background: #f4f4f4; cursor: pointer; font-size: 0.95em; }
+.tab-btn:first-child { border-radius: 6px 0 0 0; }
+.tab-btn:last-child { border-radius: 0 6px 0 0; }
+.distro-group { margin: 1.5rem 0 0.5rem; }
+.distro-btn { padding: 0.5rem 1.5rem; border: 1px solid #ddd; background: #f4f4f4; cursor: pointer; font-size: 0.95em; margin-right: 0.25rem; border-radius: 4px; }
+.distro-btn.active { background: #fff; border-color: #333; font-weight: 600; }
+.tab-btn.active { background: #fff; border-bottom-color: #fff; font-weight: 600; }
+.tab-content { display: none; border: 1px solid #ddd; border-top: none; border-radius: 0 0 6px 6px; padding: 1rem; }
+.tab-content.active { display: block; }
+a { color: #0366d6; }
+table { border-collapse: collapse; width: 100%; margin: 0.5rem 0 1.5rem; }
+th, td { text-align: left; padding: 0.4rem 0.8rem; border: 1px solid #ddd; font-size: 0.9em; }
+th { background: #f4f4f4; }
+</style>
+</head>
+<body>
+<div class="header-row">
+  <h1>Podman Isolated</h1>
+  <a class="repo-badge" href="https://github.com/xpufx/podman-isolated-pkgs" target="_blank" rel="noopener noreferrer">
+    <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+    GitHub
+  </a>
+</div>
+<p>Pre-built standalone <code>.deb</code> packages for isolated upstream Podman on Ubuntu (amd64 &amp; arm64). Packages install into <code>/opt/podman/releases/&lt;version&gt;/</code> with companion symlinks in <code>/usr/bin/</code>, allowing seamless cohabitation with Ubuntu system packages.</p>
+
+<h2>Choose a Track</h2>
+<div class="tracks">
+  <div class="track recommended">
+    <h3>stable</h3>
+    <p>Podman 6.x, auto-updated with a soak window. Best for production and daily use.</p>
+  </div>
+  <div class="track">
+    <h3>v5</h3>
+    <p>Podman 5.x maintenance line, auto-updated with a soak window. For hosts not yet ready for the Podman 6.0 breaking changes.</p>
+  </div>
+  <div class="track">
+    <h3>nightly</h3>
+    <p>Built from upstream main branch HEAD daily. Bleeding-edge, may break.</p>
+  </div>
+</div>
+
+<h2>Setup</h2>
+
+<div class="distro-group">
+  <strong>Distribution:</strong>
+  <button class="distro-btn active" onclick="setDistro('2404')">Ubuntu 24.04</button>
+  <button class="distro-btn" onclick="setDistro('2604')">Ubuntu 26.04</button>
+  <button class="distro-btn" onclick="setDistro('bookworm')">Debian 12 (bookworm)</button>
+  <button class="distro-btn" onclick="setDistro('trixie')">Debian 13 (trixie)</button>
+  <button class="distro-btn" onclick="setDistro('tarball')">Generic Tarball</button>
+</div>
+
+<p>1. Import the signing key:</p>
+<pre><code>sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://xpufx.github.io/podman-isolated-pkgs/apt/podman-isolated.gpg \
+  | sudo tee /etc/apt/keyrings/podman-isolated.gpg > /dev/null</code></pre>
+
+<p>2. Add the repository — pick your track:</p>
+<div class="tab-group">
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showTab('stable')">stable</button>
+    <button class="tab-btn" onclick="showTab('v5')">v5</button>
+    <button class="tab-btn" onclick="showTab('nightly')">nightly</button>
+  </div>
+  <div id="tab-stable" class="tab-content active">
+    <pre class="snippet" data-distro="2404"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: stable-2404
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="2604" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: stable-2604
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="bookworm" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: stable-bookworm
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="trixie" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: stable-trixie
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+  </div>
+  <div id="tab-v5" class="tab-content">
+    <pre class="snippet" data-distro="2404"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: v5-2404
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="2604" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: v5-2604
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="bookworm" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: v5-bookworm
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="trixie" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: v5-trixie
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+  </div>
+  <div id="tab-nightly" class="tab-content">
+    <pre class="snippet" data-distro="2404"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: nightly-2404
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="2604" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: nightly-2604
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="bookworm" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: nightly-bookworm
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+    <pre class="snippet" data-distro="trixie" style="display:none"><code>sudo tee /etc/apt/sources.list.d/podman-isolated.sources &lt;&lt; 'EOF'
+Types: deb
+URIs: https://xpufx.github.io/podman-isolated-pkgs/apt/apt
+Suites: nightly-trixie
+Components: main
+Signed-By: /etc/apt/keyrings/podman-isolated.gpg
+EOF</code></pre>
+  </div>
+</div>
+
+<p><em>Note:</em> The bare suite names <code>stable</code> and <code>nightly</code>
+are <strong>deprecated</strong> and will be removed in a future release (the <code>v5</code>
+track is distro-qualified only — always use <code>v5-2404</code> / <code>v5-2604</code>).
+<span id="migrating-from-bare-suite-names">(Distro-qualified suite names like <code>stable-2404</code> and <code>stable-2604</code> are recommended).</span></p>
+
+<p>3. Install:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install podman6</code></pre>
+<p><em>(For the v5 track, run <code>sudo apt-get install podman5</code>)</em></p>
+<p>The package installs the complete standalone Podman stack into <code>/opt/podman/releases/&lt;version&gt;/</code> and provides <code>podman6</code> (or <code>podman5</code>) in <code>/usr/bin/</code>.</p>
+
+<p><em>Running multiple Podman engines concurrently?</em> See <a href="TEST_REPORT.md#6-potential-issues--edge-cases">Potential Issues &amp; Edge Cases</a> for tips on isolated subnet pools.</p>
+
+<h2>Package Versions</h2>
+<table>
+<tr><th>Package</th><th>stable</th><th>v5</th><th>nightly</th></tr>
+<tr><td>podman5</td><td><code>—</code></td><td><code>5.8.6~ubuntu24.04.podman2</code></td><td><code>—</code></td></tr>
+<tr><td>podman6</td><td><code>6.1.0~ubuntu24.04.podman2</code></td><td><code>—</code></td><td><code>—</code></td></tr>
+</table>
+
+<h2>Resources</h2>
+<ul>
+<li><a href="TEST_REPORT.md">Verification &amp; Test Report (TEST_REPORT.md)</a></li>
+<li><a href="podman-isolated.gpg">GPG signing key (podman-isolated.gpg)</a></li>
+<li><a href="apt/">APT repository root (apt/)</a></li>
+<li><a href="releases/">Standalone releases (releases/)</a></li>
+</ul>
+
+<script>
+function showTab(track) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.querySelector('.tab-btn[onclick*="' + track + '"]').classList.add('active');
+  document.getElementById('tab-' + track).classList.add('active');
+}
+function setDistro(ver) {
+  document.querySelectorAll('.distro-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.distro-btn[onclick*="' + ver + '"]').classList.add('active');
+  document.querySelectorAll('.snippet').forEach(s => {
+    s.style.display = s.dataset.distro === ver ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

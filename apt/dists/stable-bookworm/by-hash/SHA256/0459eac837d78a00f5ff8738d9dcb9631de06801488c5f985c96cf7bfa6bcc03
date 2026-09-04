@@ -1,0 +1,30 @@
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: stable-bookworm
+Acquire-By-Hash: yes
+Codename: stable-bookworm
+Date: Fri, 04 Sep 2026 09:59:57 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Debian 12 (bookworm) - stable releases
+MD5Sum:
+ c14f7193ac67bce79aeb51176366c02e 712 main/binary-amd64/Packages
+ 63ef646a83fcfec4169b310c17c2ee07 479 main/binary-amd64/Packages.gz
+ 41a8f13c9c202767c7576dbdfa24e55f 188 main/binary-amd64/Release
+ 6fe1c15480cc9538de87c52f926a0731 712 main/binary-arm64/Packages
+ 337d57bb12dd83b6bd7b3ad574f85996 480 main/binary-arm64/Packages.gz
+ afb2b51ce5933523d1fa1e2789a9d7f3 188 main/binary-arm64/Release
+SHA1:
+ e73d058142f59b8704e77ccb36462bbaea697b4c 712 main/binary-amd64/Packages
+ 9b4b1bc689d9faccf6ee4c5001004871a82e1fad 479 main/binary-amd64/Packages.gz
+ 8ed43de68c4db01a2e9c4ed627310cea61e4e671 188 main/binary-amd64/Release
+ 2f03b9918683e7fec1e3399d0d220f81b2e0b9aa 712 main/binary-arm64/Packages
+ 73474535560a9a24676497e391fe1951c6d079d6 480 main/binary-arm64/Packages.gz
+ ba62a4d4f39a74e9912cca3eb7081edb4922470a 188 main/binary-arm64/Release
+SHA256:
+ c36b45fc73a52ab9e07596fc945a5b217654adc832ea62059cc7cf1d69e5eac8 712 main/binary-amd64/Packages
+ bb19650afbd7b0f83931fbe589bd5ee250a91e70b32f8a85a128d0ba07c74e54 479 main/binary-amd64/Packages.gz
+ b676ce5c975ea3d61a1ccf6b731b8ca96873a2a8d69e96b5c9f75c17f2e23adf 188 main/binary-amd64/Release
+ f1fa7aef4f9d7653d6381c62421693dbf5f0828f906333a49f1822c8c4da19fd 712 main/binary-arm64/Packages
+ 63f0ae7150b1ac7387a28b47fcdbf658bb726e43495fdac4dd21d39c8d0b0c9a 480 main/binary-arm64/Packages.gz
+ 9e32d6a98cd423b5d30a55fda65a15481ebaaae3152a63ce4dc6af87692c11b6 188 main/binary-arm64/Release

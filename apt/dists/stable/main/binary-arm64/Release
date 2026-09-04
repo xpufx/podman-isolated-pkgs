@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Architecture: arm64
+Description: DEPRECATED alias for stable-2404 (Ubuntu 24.04) - see migration docs

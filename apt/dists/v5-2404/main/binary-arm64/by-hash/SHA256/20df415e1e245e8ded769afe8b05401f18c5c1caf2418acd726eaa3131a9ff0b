@@ -1,0 +1,6 @@
+Archive: v5-2404
+Component: main
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Architecture: arm64
+Description: Podman compiled from source for Ubuntu 24.04 - Podman 5.x maintenance

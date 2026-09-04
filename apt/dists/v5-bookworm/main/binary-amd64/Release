@@ -1,0 +1,6 @@
+Archive: v5-bookworm
+Component: main
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Architecture: amd64
+Description: Podman compiled from source for Debian 12 (bookworm) - Podman 5.x maintenance

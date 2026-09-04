@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: v5-2404
+Acquire-By-Hash: yes
+Codename: v5-2404
+Date: Fri, 04 Sep 2026 11:55:39 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Ubuntu 24.04 - Podman 5.x maintenance
+MD5Sum:
+ ebf06bba18107e9f8987fd371e90c22c 724 main/binary-amd64/Packages
+ 05e3359bb676e7171bb631309e6cadfd 486 main/binary-amd64/Packages.gz
+ 3a6056d645b50da335909099ed58626b 179 main/binary-amd64/Release
+ 4452a4031957de641b0f84f876cf9a79 724 main/binary-arm64/Packages
+ 967648d09466859ac8de7b2d7217003b 487 main/binary-arm64/Packages.gz
+ c9a3e41a8442db6df61f5af8d13dc4a1 179 main/binary-arm64/Release
+SHA1:
+ f7b6e4df72bd61d3c9a76bf313f2fa55732ee9bd 724 main/binary-amd64/Packages
+ 8519d405eb467c7105cc10b2979bdce676c85925 486 main/binary-amd64/Packages.gz
+ 0ca1624fb441bfdcbfe31379a246412a91ab5e49 179 main/binary-amd64/Release
+ e69862f2a3ab4c9a92b8cc5ec39dff0767bbaf82 724 main/binary-arm64/Packages
+ a5ddbd87160560000e86753d68398f4393712584 487 main/binary-arm64/Packages.gz
+ a05321360f579e3fc95fa42666467bcee7b01522 179 main/binary-arm64/Release
+SHA256:
+ 2a9381d0232b2448fb370055d0b021b59819b112c716fe30932890685da83d22 724 main/binary-amd64/Packages
+ 91c2f462155aebce0041343bf101480ee5a8181164847b6c5203d9378193fd18 486 main/binary-amd64/Packages.gz
+ b310da5be3c438af02608e61d447a45586c6c7e4e74b42d642d661e6ad120835 179 main/binary-amd64/Release
+ bba444242bf60b97b759406bf56d69e898e553d84fa79dd9c6b6d36702fed1bd 724 main/binary-arm64/Packages
+ b8b74868df3e3c6d41bbd7f3f06676cafa9c17b10cdced71ff288183a109f54c 487 main/binary-arm64/Packages.gz
+ 20df415e1e245e8ded769afe8b05401f18c5c1caf2418acd726eaa3131a9ff0b 179 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEESwNbxKIkL8leujArHpbCFN75UXQFAmqasbsACgkQHpbCFN75
+UXQG4BAAt7B0mf1pQH6WcN5yWAgu14AobRMwYGPpeu75YJgl1dmBiTg047cl9oUs
+WtrGY9C+xFVdCAutgqamv0qiXC9H6yDRWfQQvCKZvTF+2iI4Mv4eD/FC7wQZdAz6
+rT1eX35KH8UIyaiVMUoi2/6q50Mu7/CVIcNb0CoAUS82pLLBUwUqbSFc8M7eyvKu
+sUS7ePpE0ynZSCdZCFDGh3dQA8bgvfLGeMx8GgAIcEDHdev3gQzVwMshsFhd9Hlu
+Y1ogX5Sx2SoOFJdTAW+MOrnmRsL2q8bZ3hBR514Tty7aP6qPm614dRpbgGT5+wpG
+QbjmPkDJ1sa8zipfFf8t/1fnBcRcAzU/27rl+yBwL5K2Ob4h1xDCGLCBu6anvJ57
+ICu+fb32EPqcNvUqvdlOUoNHyNH8dSmGnWziktQSEWQOMGGGM31ZRJbp/3Mc2OCf
+H6LamFwcsUcQ/SrTp5l29P4EAkJXi+Wq/lG4VPq7FN8lnuL9c4Wed3pnG4vQ8h64
+8fdKas6pjqJcO3PeutVw0QMTLMFyIoZZDFVkF8SrdbPw8bfezqNNaDf+zbAcZ/bM
+wfT6ktUqAfqEQKnDqKVTXzERBRmG8CmD4EO2JrLkPWoHPVtx63sEQvRt1QLxOJO/
+UMnvsi2y3ON4hMf55KQQqha7l1eTy+Ku+hZ/1y6WjsAZC3l3fnw=
+=EEC1
+-----END PGP SIGNATURE-----

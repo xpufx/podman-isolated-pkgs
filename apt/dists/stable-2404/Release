@@ -1,0 +1,30 @@
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: stable-2404
+Acquire-By-Hash: yes
+Codename: stable-2404
+Date: Fri, 04 Sep 2026 09:59:44 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Ubuntu 24.04 - stable releases
+MD5Sum:
+ 6fa7f192753724ab27fa418119d5e4bb 724 main/binary-amd64/Packages
+ 37837269c47c10fe907b730953016f72 485 main/binary-amd64/Packages.gz
+ c00212917600fd08af9c82d033cd63d2 176 main/binary-amd64/Release
+ 91e75f713a225068b86ec94797ca5c07 724 main/binary-arm64/Packages
+ b76853e76273b8ebc4acd6a648d687bb 487 main/binary-arm64/Packages.gz
+ 04fc07fbe819250cb0a6fa9f2be83038 176 main/binary-arm64/Release
+SHA1:
+ f8a03e6378f067889f5a64300f88b9e98c8aee59 724 main/binary-amd64/Packages
+ daa1751e2ff1138c78c5875ae8ab63907b24cf98 485 main/binary-amd64/Packages.gz
+ bb7a77f480f63803713975b0dbf01d7e38ff2491 176 main/binary-amd64/Release
+ b2c1c6251599c392594c5bc8b686b7df3904402f 724 main/binary-arm64/Packages
+ 159a796594d752dc582f2d2c4b33740058efe671 487 main/binary-arm64/Packages.gz
+ 7692a8c5761c3e559ec7417ab1eac42d38b1b6d6 176 main/binary-arm64/Release
+SHA256:
+ bc77d22d4db74b80949399208d684e661994268b968d65970c95ec909f2fc020 724 main/binary-amd64/Packages
+ 42221b7dfaa7fbea269414c3eefd689083bd829b553ee82c67ab3ddb557ff10a 485 main/binary-amd64/Packages.gz
+ 761bf5d0f4cd58ea20114f14bffcb7aab24d532aed35c4697ac8fb4d41cbf15c 176 main/binary-amd64/Release
+ a3ed2db144cd22154744800398b4e4ecd78f8c03f69d3de85e46a9f32932f39c 724 main/binary-arm64/Packages
+ f0d32059a8002632fd02b0ef6f3bc714ab7d59a49b773cb3aa58baff2e7112ca 487 main/binary-arm64/Packages.gz
+ 25e451012201febb4078db23ef56e95dc3b6aee2bc0f53f9906e11c6bd949619 176 main/binary-arm64/Release

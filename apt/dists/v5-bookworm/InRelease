@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Suite: v5-bookworm
+Acquire-By-Hash: yes
+Codename: v5-bookworm
+Date: Fri, 04 Sep 2026 11:55:50 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Podman compiled from source for Debian 12 (bookworm) - Podman 5.x maintenance
+MD5Sum:
+ f8554490aee9196b93c0794cef4fa4ce 712 main/binary-amd64/Packages
+ fdca4c56e8f8fb38dd1f01bc026e296a 481 main/binary-amd64/Packages.gz
+ 47bb460045261caf0241e01db3364017 191 main/binary-amd64/Release
+ 15d83d2d0f4f6940b4995f27b2d0ace7 712 main/binary-arm64/Packages
+ 063787427fa746aa88cc4b200e897251 481 main/binary-arm64/Packages.gz
+ ad3156da6b813d2a248ce3081a9401ce 191 main/binary-arm64/Release
+SHA1:
+ c7c35c71f646aa5f6875db8548e37c60b3b13ef4 712 main/binary-amd64/Packages
+ 5ccb0cbb7a8d20e2f0c9025584912f50f1829272 481 main/binary-amd64/Packages.gz
+ aed4d8168e889bad819aaeec25ced5571bb86496 191 main/binary-amd64/Release
+ 34e3a3e7a0687d2086034ff2434eb8f2f0b12353 712 main/binary-arm64/Packages
+ 4b310f189e17ca56121e86aa25209ed2dfa2a119 481 main/binary-arm64/Packages.gz
+ 734938df4dea85b220cf82518dacba27ca1ae4f4 191 main/binary-arm64/Release
+SHA256:
+ ed8473d4ac9123daf83b4b7046ff254fd1be36f4befe5fb16e78029cf6d8f8ec 712 main/binary-amd64/Packages
+ 41f035207d6b1eb4f9671923b27ad3c2ca64ad4aa5c4e8b7e087a1d019cb11bd 481 main/binary-amd64/Packages.gz
+ c69978e12db544a7ec5beee772dcf7d61a7dd5f2cdefb46660cf2cdf063a94d7 191 main/binary-amd64/Release
+ 410b0e5d1193df1633fb6a3ac3244a5357d24118cc90ea9fe60460e052eba293 712 main/binary-arm64/Packages
+ 54ab4fbb9e3713c7ae3396735f9cbd9d690cb30ffd6895eca3094a2342aa2088 481 main/binary-arm64/Packages.gz
+ 346a705337fb7a39ed9a2eaff79ecd8e5df0735b60a754520f1ac65f520dc195 191 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEESwNbxKIkL8leujArHpbCFN75UXQFAmqascYACgkQHpbCFN75
+UXSacA/9FHc5W0lCA0SRNcXvoD6PdajVzdEj4cT6yLtqd+5xtVTN81FmHs49gm24
+ALgsuEqhZFqszsq7ZipDwLm8rIST+JrFBBQJiGNjS5qeF22RwsmCvzOXrEVTJh1i
+SqFqcxZEucoTPCZTuRvCmieej6ZiIdinqdnLfVUMQSFOFr1HLfvaY1jGH5NnpNdE
+yCNf6XZQo7gsMZ3BVZiLGzR/TYanBVyj9/Ox36a+pcdNGbAb54PGLKd/YWkmpoMh
+YvxX4vsEC3Sj5HA+yOsJ2rHRMStHmqck5W3QAmMtIprELjOGqwKMqpiF2qaJjYyX
+7H4b2c23Lc/ni+FEK+qSrqUlbmVRRCQv0Qbe40AOYwLTYUO6IfG1dRruZWW6U241
+KO7cJlgU1iGKjK2wHWs+KR0ObuIwb4qkvLQhw53tiIv/zsQIBe8C9YE98UmeOUj4
+D8rsLLrS1swoKUJkyq1dv2NF9KvQynIdBT95oAuqpxHb7WaymuN1q9pZ5XGeqKn2
+HY1UGouUfw+reQc7qbeHSQPyby8QRUbmDLKowXIvZKM4Rw1X8DF34N8roqqGjlT/
+dD2mU163UiLLToziaP5/jAIk+pfQjkDyApB65y+Fm7zR0DO7x6ALHv/3hJfUdL4X
+CJKUW9PQeChnKoaVLshPqYzuotjc3Pp+SUQJoAQKGqNzP3pCBVo=
+=3avA
+-----END PGP SIGNATURE-----

@@ -1,0 +1,6 @@
+Archive: stable-bookworm
+Component: main
+Origin: podman-ubuntu
+Label: Podman Ubuntu
+Architecture: amd64
+Description: Podman compiled from source for Debian 12 (bookworm) - stable releases

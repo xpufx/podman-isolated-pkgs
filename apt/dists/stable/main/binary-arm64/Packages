@@ -1,0 +1,17 @@
+Package: podman6
+Version: 6.1.0~ubuntu24.04.podman2
+Architecture: arm64
+License: Apache-2.0
+Maintainer: Podman Isolated <noreply@github.com>
+Installed-Size: 150448
+Depends: iptables, nftables, uidmap, libcap2, libglib2.0-0t64, libgpgme11t64, libjson-c5, libseccomp2, libsystemd0
+Homepage: https://github.com/xpufx/podman-isolated
+Priority: optional
+Section: admin
+Filename: pool/main/p/podman6/podman6_6.1.0~ubuntu24.04.podman2_arm64.deb
+Size: 70841286
+SHA256: 3e199172f70f8eb84fdbd4345236df1dde49ba286858f353ffa5521df4071724
+SHA1: 6727bbc31fcc6e78695cf85564ac0fc9e8bf4c95
+MD5sum: b059734fa438469e8c6df483c8b2290d
+Description: Isolated upstream Podman container engine and companion OCI stack in /opt/podman/releases/6.1.0
+
